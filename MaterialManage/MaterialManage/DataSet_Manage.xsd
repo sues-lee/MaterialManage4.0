@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_Manage" targetNamespace="http://tempuri.org/DataSet_Manage.xsd" xmlns:mstns="http://tempuri.org/DataSet_Manage.xsd" xmlns="http://tempuri.org/DataSet_Manage.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Manage" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_Manage" msprop:Generator_UserDSName="DataSet_Manage">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OutStock" msprop:Generator_TableClassName="OutStockDataTable" msprop:Generator_TableVarName="tableOutStock" msprop:Generator_RowChangedName="OutStockRowChanged" msprop:Generator_TablePropName="OutStock" msprop:Generator_RowDeletingName="OutStockRowDeleting" msprop:Generator_RowChangingName="OutStockRowChanging" msprop:Generator_RowEvHandlerName="OutStockRowChangeEventHandler" msprop:Generator_RowDeletedName="OutStockRowDeleted" msprop:Generator_RowClassName="OutStockRow" msprop:Generator_UserTableName="OutStock" msprop:Generator_RowEvArgName="OutStockRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OSId" msprop:Generator_ColumnVarNameInTable="columnOSId" msprop:Generator_ColumnPropNameInRow="OSId" msprop:Generator_ColumnPropNameInTable="OSIdColumn" msprop:Generator_UserColumnName="OSId" type="xs:string" />
+              <xs:element name="MId" msprop:Generator_ColumnVarNameInTable="columnMId" msprop:Generator_ColumnPropNameInRow="MId" msprop:Generator_ColumnPropNameInTable="MIdColumn" msprop:Generator_UserColumnName="MId" type="xs:string" minOccurs="0" />
+              <xs:element name="OSNum" msprop:Generator_ColumnVarNameInTable="columnOSNum" msprop:Generator_ColumnPropNameInRow="OSNum" msprop:Generator_ColumnPropNameInTable="OSNumColumn" msprop:Generator_UserColumnName="OSNum" type="xs:string" minOccurs="0" />
+              <xs:element name="OName" msprop:Generator_ColumnVarNameInTable="columnOName" msprop:Generator_ColumnPropNameInRow="OName" msprop:Generator_ColumnPropNameInTable="ONameColumn" msprop:Generator_UserColumnName="OName" type="xs:string" minOccurs="0" />
+              <xs:element name="UName" msprop:Generator_ColumnVarNameInTable="columnUName" msprop:Generator_ColumnPropNameInRow="UName" msprop:Generator_ColumnPropNameInTable="UNameColumn" msprop:Generator_UserColumnName="UName" type="xs:string" minOccurs="0" />
+              <xs:element name="UMName" msprop:Generator_ColumnVarNameInTable="columnUMName" msprop:Generator_ColumnPropNameInRow="UMName" msprop:Generator_ColumnPropNameInTable="UMNameColumn" msprop:Generator_UserColumnName="UMName" type="xs:string" minOccurs="0" />
+              <xs:element name="OSTotalPrice" msprop:Generator_ColumnVarNameInTable="columnOSTotalPrice" msprop:Generator_ColumnPropNameInRow="OSTotalPrice" msprop:Generator_ColumnPropNameInTable="OSTotalPriceColumn" msprop:Generator_UserColumnName="OSTotalPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="OSUse" msprop:Generator_ColumnVarNameInTable="columnOSUse" msprop:Generator_ColumnPropNameInRow="OSUse" msprop:Generator_ColumnPropNameInTable="OSUseColumn" msprop:Generator_UserColumnName="OSUse" type="xs:string" minOccurs="0" />
+              <xs:element name="OSDate" msprop:Generator_ColumnVarNameInTable="columnOSDate" msprop:Generator_ColumnPropNameInRow="OSDate" msprop:Generator_ColumnPropNameInTable="OSDateColumn" msprop:Generator_UserColumnName="OSDate" type="xs:string" minOccurs="0" />
+              <xs:element name="OSRemark" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OSRemark" msprop:Generator_ColumnVarNameInTable="columnOSRemark" msprop:Generator_ColumnPropNameInTable="OSRemarkColumn" msprop:Generator_UserColumnName="OSRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="FCName" msprop:Generator_ColumnVarNameInTable="columnFCName" msprop:Generator_ColumnPropNameInRow="FCName" msprop:Generator_ColumnPropNameInTable="FCNameColumn" msprop:Generator_UserColumnName="FCName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Material" msprop:Generator_TableClassName="MaterialDataTable" msprop:Generator_TableVarName="tableMaterial" msprop:Generator_RowChangedName="MaterialRowChanged" msprop:Generator_TablePropName="Material" msprop:Generator_RowDeletingName="MaterialRowDeleting" msprop:Generator_RowChangingName="MaterialRowChanging" msprop:Generator_RowEvHandlerName="MaterialRowChangeEventHandler" msprop:Generator_RowDeletedName="MaterialRowDeleted" msprop:Generator_RowClassName="MaterialRow" msprop:Generator_UserTableName="Material" msprop:Generator_RowEvArgName="MaterialRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MId" msprop:Generator_ColumnVarNameInTable="columnMId" msprop:Generator_ColumnPropNameInRow="MId" msprop:Generator_ColumnPropNameInTable="MIdColumn" msprop:Generator_UserColumnName="MId" type="xs:string" minOccurs="0" />
+              <xs:element name="MName" msprop:Generator_ColumnVarNameInTable="columnMName" msprop:Generator_ColumnPropNameInRow="MName" msprop:Generator_ColumnPropNameInTable="MNameColumn" msprop:Generator_UserColumnName="MName" type="xs:string" minOccurs="0" />
+              <xs:element name="MType" msprop:Generator_ColumnVarNameInTable="columnMType" msprop:Generator_ColumnPropNameInRow="MType" msprop:Generator_ColumnPropNameInTable="MTypeColumn" msprop:Generator_UserColumnName="MType" type="xs:string" minOccurs="0" />
+              <xs:element name="MPrice" msprop:Generator_ColumnVarNameInTable="columnMPrice" msprop:Generator_ColumnPropNameInRow="MPrice" msprop:Generator_ColumnPropNameInTable="MPriceColumn" msprop:Generator_UserColumnName="MPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="MUnit" msprop:Generator_ColumnVarNameInTable="columnMUnit" msprop:Generator_ColumnPropNameInRow="MUnit" msprop:Generator_ColumnPropNameInTable="MUnitColumn" msprop:Generator_UserColumnName="MUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="MMark" msprop:Generator_ColumnVarNameInTable="columnMMark" msprop:Generator_ColumnPropNameInRow="MMark" msprop:Generator_ColumnPropNameInTable="MMarkColumn" msprop:Generator_UserColumnName="MMark" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OutStock" />
+      <xs:field xpath="mstns:OSId" />
+    </xs:unique>
+    <xs:unique name="Material_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Material" />
+      <xs:field xpath="mstns:MId" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Material_OutStock" msdata:parent="Material" msdata:child="OutStock" msdata:parentkey="MId" msdata:childkey="MId" msprop:Generator_UserChildTable="OutStock" msprop:Generator_ChildPropName="GetOutStockRows" msprop:Generator_UserRelationName="FK_Material_OutStock" msprop:Generator_RelationVarName="relationFK_Material_OutStock" msprop:Generator_UserParentTable="Material" msprop:Generator_ParentPropName="MaterialRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

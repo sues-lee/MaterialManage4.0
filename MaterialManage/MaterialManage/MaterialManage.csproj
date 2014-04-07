@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8D709CB-58A7-46B2-8A31-789F3A2AA52D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaterialManage</RootNamespace>
+    <AssemblyName>MaterialManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E84E4A70922022E8E953EBD7AB378DE5F759A9CE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MaterialManage_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>www.ico.la_63a74740192296d474f060a01389c779_64X64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMaterial\Form_AddM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMaterial\Form_AddM.designer.cs">
+      <DependentUpon>Form_AddM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMaterial\Form_MInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMaterial\Form_MInfo.designer.cs">
+      <DependentUpon>Form_MInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDataBase.cs" />
+    <Compile Include="CodeTableUpdate\Form_Buy_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Buy_Change.designer.cs">
+      <DependentUpon>Form_Buy_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Classify_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Classify_Change.designer.cs">
+      <DependentUpon>Form_Classify_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Funds_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Funds_Change.designer.cs">
+      <DependentUpon>Form_Funds_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Material_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Material_Change.designer.cs">
+      <DependentUpon>Form_Material_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Operator_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_Operator_Change.designer.cs">
+      <DependentUpon>Form_Operator_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_UnitManager_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeTableUpdate\Form_UnitManager_Change.designer.cs">
+      <DependentUpon>Form_UnitManager_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Manage.cs">
+      <DependentUpon>DataSet_Manage.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet_Manage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Manage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Test.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Test.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Buy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Buy.Designer.cs">
+      <DependentUpon>Form_Buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Classify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Classify.Designer.cs">
+      <DependentUpon>Form_Classify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Funds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Funds.Designer.cs">
+      <DependentUpon>Form_Funds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Material.Designer.cs">
+      <DependentUpon>Form_Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUpdate\Form_Operator.Designer.cs">
+      <DependentUpon>Form_Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataUpdate\Form_UnitManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUpdate\Form_UnitManager.Designer.cs">
+      <DependentUpon>Form_UnitManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataUpdate\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUpdate\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Ds_Out.cs">
+      <DependentUpon>Ds_Out.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_Out.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Out.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main1.Designer.cs">
+      <DependentUpon>Form_Main1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Crt_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Crt_test.Designer.cs">
+      <DependentUpon>Form_Crt_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSearch\Form_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoSearch\Form_Search.Designer.cs">
+      <DependentUpon>Form_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSearch\Form_Search_Simple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoSearch\Form_Search_Simple.Designer.cs">
+      <DependentUpon>Form_Search_Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutStock\Form_Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutStock\Form_Confirm.Designer.cs">
+      <DependentUpon>Form_Confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutStock\Form_Out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutStock\Form_Out.designer.cs">
+      <DependentUpon>Form_Out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CRt_Out2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRt_Out21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRt_Out2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRt_PrintLong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRt_PrintLong1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRt_PrintLong.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRt_PrintLongLong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRt_PrintLongLong1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRt_PrintLongLong.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRt_Test.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRt_Test1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRt_Test.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReport_new.cs" />
+    <Compile Include="Reports\CrystalReport_new1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_new.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User\Form_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Form_AddUser.Designer.cs">
+      <DependentUpon>Form_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Form_CodeChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Form_CodeChange.Designer.cs">
+      <DependentUpon>Form_CodeChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Form_UserChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Form_UserChange.Designer.cs">
+      <DependentUpon>Form_UserChange.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddMaterial\Form_AddM.resx">
+      <DependentUpon>Form_AddM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMaterial\Form_MInfo.resx">
+      <DependentUpon>Form_MInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeTableUpdate\Form_Buy_Change.resx">
+      <DependentUpon>Form_Buy_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeTableUpdate\Form_Classify_Change.resx">
+      <DependentUpon>Form_Classify_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeTableUpdate\Form_Funds_Change.resx">
+      <DependentUpon>Form_Funds_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeTableUpdate\Form_Material_Change.resx">
+      <DependentUpon>Form_Material_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeTableUpdate\Form_Operator_Change.resx">
+      <DependentUpon>Form_Operator_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeTableUpdate\Form_UnitManager_Change.resx">
+      <DependentUpon>Form_UnitManager_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUpdate\Form_Buy.resx">
+      <DependentUpon>Form_Buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUpdate\Form_Classify.resx">
+      <DependentUpon>Form_Classify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUpdate\Form_Funds.resx">
+      <DependentUpon>Form_Funds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUpdate\Form_Material.resx">
+      <DependentUpon>Form_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUpdate\Form_Operator.resx">
+      <DependentUpon>Form_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUpdate\Form_UnitManager.resx">
+      <DependentUpon>Form_UnitManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUpdate\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main1.resx">
+      <DependentUpon>Form_Main1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Crt_test.resx">
+      <DependentUpon>Form_Crt_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoSearch\Form_Search.resx">
+      <DependentUpon>Form_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoSearch\Form_Search_Simple.resx">
+      <DependentUpon>Form_Search_Simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutStock\Form_Confirm.resx">
+      <DependentUpon>Form_Confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutStock\Form_Out.resx">
+      <DependentUpon>Form_Out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRt_Out2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRt_Out21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRt_PrintLong.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRt_PrintLong1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRt_PrintLongLong.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRt_PrintLongLong1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRt_Test.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRt_Test1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReport_new.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_new1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form_AddUser.resx">
+      <DependentUpon>Form_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form_CodeChange.resx">
+      <DependentUpon>Form_CodeChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form_UserChange.resx">
+      <DependentUpon>Form_UserChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_Manage.xsc">
+      <DependentUpon>DataSet_Manage.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Manage.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Manage.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Manage.xss">
+      <DependentUpon>DataSet_Manage.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Test.xsc">
+      <DependentUpon>DataSet_Test.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Test.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Test.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Test.xss">
+      <DependentUpon>DataSet_Test.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Out.xsc">
+      <DependentUpon>Ds_Out.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Out.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Out.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_Out.xss">
+      <DependentUpon>Ds_Out.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManage_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OutId.xml" />
+    <Content Include="OutList.xml" />
+    <Content Include="www.ico.la_63a74740192296d474f060a01389c779_64X64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

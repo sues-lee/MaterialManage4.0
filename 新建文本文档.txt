@@ -1,0 +1,20 @@
+use MaterialManage 
+create table Login(						--登陆表
+		    ID int not null,				--编号，主键，自动增长
+		    UserName varchar(50) not null,		--姓名
+		    Password varchar(50) not null,		--密码
+		    primary key (ID)
+		  )
+
+
+
+use MaterialManage
+insert into DDT       //添加到数据字典(DName,DCName,DPName,DPCName,DType,DLength,DIsP,DIsIndex)
+               select 'Login','登陆表','LID','编号','I',NULL,'T','F'
+				UNion
+				select 'Login','登陆表','UserName','用户名','C',50,'F','T'
+				UNion
+				select 'Login','登陆表','Password','密码','C',50,'F','F'
+				UNion
+				select 'Login','登陆表','LMark','标记','I',NULL,'F','F'
+				SELECT * from DDT
